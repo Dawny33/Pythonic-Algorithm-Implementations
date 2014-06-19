@@ -18,6 +18,9 @@ class Stack:
 	def size(self):
 		return len(self.items)		
 
+#I tend to write the Stack implementation class in every example, just to \
+# practise writing code, however it can simply be imported as a module too.
+
 def Str_rev(target):
 
 	stack_obj = Stack()

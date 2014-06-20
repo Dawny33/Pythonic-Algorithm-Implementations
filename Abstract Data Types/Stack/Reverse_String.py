@@ -16,10 +16,10 @@ class Stack:
 		return self.items[0]
 
 	def size(self):
-		return len(self.items)		
+		return len(self.items)	
 
 #I tend to write the Stack implementation class in every example, just to \
-# practise writing code, however it can simply be imported as a module too.
+# practise writing code. However it can simply be imported as a module too.
 
 def Str_rev(target):
 

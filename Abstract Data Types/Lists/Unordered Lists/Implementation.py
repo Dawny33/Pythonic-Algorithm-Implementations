@@ -74,6 +74,33 @@ class UnorderedList:
         else:
             previous.setNext(current.getNext())
 
+    def append(self, item):
+        found = False
+        while not found:
+            if current.getNext() == None:
+                current.setNext(item)
+                found = True
+            else:
+                current = current.getNext
+
+    def index_of(self, data):
+        """Find the position of a node in the list"""
+        current = self.head
+        pos = 0
+
+        while current != None:
+            if (current.data == data):
+                return pos
+            else:
+                current = current.getNext
+                pos = pos + 1
+
+        return pos
+
+
+# Should also create methods for insert and pop(easy)
+
+
 # mylist = UnorderedList()
 
 # mylist.add(31)

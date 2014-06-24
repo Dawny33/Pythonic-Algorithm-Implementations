@@ -23,18 +23,18 @@ class Stack:
 
 #Now, creating a Stack object
 
-s = Stack()
-s.push(4)
-s.push("Dog")
-s.push(True)
+# s = Stack()
+# s.push(4)
+# s.push("Dog")
+# s.push(True)
 
-#print(s.size())
-#print(s.peek())
-#print(s.isEmpty())
+# #print(s.size())
+# #print(s.peek())
+# #print(s.isEmpty())
 
-s.push(8.4)	
+# s.push(8.4)	
 
-#print(s.pop())
-#print(s.pop())
-#print(s.pop())
-#print(s.pop())
+# #print(s.pop())
+# #print(s.pop())
+# #print(s.pop())
+# #print(s.pop())

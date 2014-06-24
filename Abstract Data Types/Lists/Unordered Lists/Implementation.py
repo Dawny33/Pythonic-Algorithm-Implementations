@@ -1,3 +1,8 @@
+''' An unordered list is a list in which the elements are linked to each other. 
+And why is it called "unordered" ?  
+You'll know it when you get to the Ordered List explanation.
+'''
+
 #For creating a single node
 
 class Node:

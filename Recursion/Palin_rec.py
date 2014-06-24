@@ -6,4 +6,4 @@ def palin_rec(target):
     return (not target) or (target.lower()[0] == target.lower()[-1] and palin_rec(target.lower()[1:-1]))
 
 
-print palin_rec("Malayalam")
+# print palin_rec("Malayalam")

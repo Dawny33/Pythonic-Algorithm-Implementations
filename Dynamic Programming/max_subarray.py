@@ -1,3 +1,5 @@
+#t is the sum of the sub-array; s in the optimal array sum
+
 def max_subarray(a):
 
 	s = -float('infinity')

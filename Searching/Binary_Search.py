@@ -16,4 +16,8 @@ def Binary_search(alist, item):
             if item < alist[mid]:
                 last = mid
 
-    return found            
+    return found
+
+
+testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
+print(Binary_search(testlist, 8))

@@ -57,8 +57,8 @@ class Graph:
         return iter(self.vertList.values())
 
 
-p = Graph()
-p.addVertex(1)
-p.addVertex(2)
-p.addEdge(1,2)
-print p.getVertices()
+f = open("C:\\Users\\acer\\Desktop\\Pythonic-Algorithm-Implementations\\Abstract Data Types\\Graph\\Edges.txt")
+for line in f:
+    print line
+
+f.close()

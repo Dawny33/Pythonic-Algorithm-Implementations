@@ -61,16 +61,36 @@ f = open("C:\\Users\\acer\\Desktop\\Pythonic-Algorithm-Implementations\\Abstract
 
 g = Graph()
 buff = []
+buff1 = []
+buff2 = []
+#links = [[] for i in xrange(len(set(buff)))]
 for line in f:
+    buff1.append(line[0])
+    buff2.append(line[2])
     buff.append(line[0])
     buff.append(line[2])
 
-for el in buff:
-    g.addVertex(g)
+    g.addEdge(line[0],line[2])
+    g.addEdge(line[2],line[0])
+
+for v in g:
+    print v
+
+#for i in range(len(buff)):
+#    g.addVertex(buff[i])
+
+#for j in range(len(buff1)):
+#    for k in range(len(buff2)):
+#        g.addEdge(buff1[j],buff2[k])
+
+print g.getVertices()
+print g.getVertex(2)
+
+
 
 
 f.close()
 
 #print buff
 #print set(buff)
-print g.getVertices()
+

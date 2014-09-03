@@ -58,7 +58,19 @@ class Graph:
 
 
 f = open("C:\\Users\\acer\\Desktop\\Pythonic-Algorithm-Implementations\\Abstract Data Types\\Graph\\Edges.txt")
+
+g = Graph()
+buff = []
 for line in f:
-    print line
+    buff.append(line[0])
+    buff.append(line[2])
+
+for el in buff:
+    g.addVertex(g)
+
 
 f.close()
+
+#print buff
+#print set(buff)
+print g.getVertices()

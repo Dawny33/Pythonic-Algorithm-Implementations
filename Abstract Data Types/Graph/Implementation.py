@@ -1,3 +1,28 @@
+
+#The vertex data structure
+class Vertex:
+    def __init__(self,key):
+        self.id = key
+        self.connectedTo = {}
+
+    def addNeighbor(self,nbr,weight=0):
+        self.connectedTo[nbr] = weight
+
+    def __str__(self):
+        return str(self.id) + ' connectedTo: ' + str([x.id for x in self.connectedTo])
+
+    def getConnections(self):
+        return self.connectedTo.keys()
+
+    def getId(self):
+        return self.id
+
+    def getWeight(self,nbr):
+        return self.connectedTo[nbr]
+
+
+#The overall Graph data structure
+
 class Graph:
     def __init__(self):
         self.vertList = {}
@@ -36,4 +61,4 @@ p = Graph()
 p.addVertex(1)
 p.addVertex(2)
 p.addEdge(1,2)
-p.getVertices()
+print p.getVertices()
